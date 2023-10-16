@@ -3,11 +3,14 @@ import { NavLink } from "react-router-dom";
 export default function Nav(){
     return(
         <nav>
-            <NavLink>
+            <NavLink to="/">
                 Home {/* Image */}
             </NavLink>
-            <NavLink>
+            <NavLink to="data-structures">
                 Data Structures
+            </NavLink>
+            <NavLink to="add">
+                Add Structure
             </NavLink>
         </nav>
     );

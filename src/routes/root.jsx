@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Nav from "../nav";
 
 export default function Root(){
@@ -9,6 +10,7 @@ export default function Root(){
             Footer
             */}
             <Nav/>
+            <Outlet />
         </div>
     );
 };
