@@ -5,7 +5,7 @@ import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <p>Hello</p>,
+    element: <p className="mx-5">Hello</p>,
   },
 ]);
 
