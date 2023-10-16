@@ -1,3 +1,5 @@
+import Nav from "../nav";
+
 export default function Root(){
     return(
         <div>
@@ -6,6 +8,7 @@ export default function Root(){
             Outlet - main content
             Footer
             */}
+            <Nav/>
         </div>
     );
 };
