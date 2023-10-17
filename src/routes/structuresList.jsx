@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 import DataStructure from "../dataStructure";
 
 export default function StructuresList(){
@@ -7,11 +7,11 @@ export default function StructuresList(){
     return(
         <div>
             <ul className="list-disc" >
-                <li><DataStructure /></li>
-                <li><DataStructure /></li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                {structures.map(structure => (
+                    <li key={structure.name}>
+                        <Link to={`/data-structures/${structure.name.replace(" ", "-")}`}>{structure.name}</Link>
+                    </li>
+                ))}
             </ul>
         </div>
     );
