@@ -10,9 +10,9 @@ export default function Root(){
             Footer
             */}
             <Nav/>
-            <div className="mx-auto w-fit mt-10" >
+            {/* <div className="mx-auto w-fit mt-10" > */}
                 <Outlet />
-            </div>
+            {/* </div> */}
             
         </div>
     );

@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/add",
-        element: <AddStructureForm />,
+        element: <AddStructureForm url={url} />,
       },
       {
         path: "/data-structures",
