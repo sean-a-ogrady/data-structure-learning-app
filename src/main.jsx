@@ -23,10 +23,10 @@ const router = createBrowserRouter([
         loader: async () => fetch(url).then(res => res.json()),
         children: [
           {
-            path: ":structureName",
+            path: ":structureId",
             element: <DataStructure />,
             loader: async ({params}) => {
-              const structureData = await fetch(`${url}/${params.structureName}`)
+              const structureData = await fetch(`${url}/${params.structureId.split("-")[0]}`)
                 .then(res => res.json());
               return structureData;
             }
