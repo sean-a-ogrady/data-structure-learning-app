@@ -10,6 +10,7 @@ export default function Root(){
             Footer
             */}
             <Nav/>
+
             <Outlet />
             
         </div>
