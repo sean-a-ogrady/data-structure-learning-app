@@ -5,6 +5,7 @@ import Root from "./routes/root";
 import AddStructureForm from "./routes/addStructureForm";
 import StructuresList from "./routes/structuresList";
 import DataStructure from "./dataStructure";
+import Homepage from "./routes/homepage";
 
 const url = "http://localhost:3000/structures";
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             }
           }
         ]
+      },
+      {
+        path: "/",
+        element: <Homepage />
       }
     ],
   },
