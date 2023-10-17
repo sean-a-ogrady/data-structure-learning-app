@@ -3,90 +3,42 @@
         {
             "id": 1,
             "name": "Array",
-            "description": "A collection of items stored at contiguous memory locations. Items can be accessed randomly using indexes.",
-            "Image": "",
-            "Analogy": "A shelf with numbered compartments where each compartment contains a specific item.",
-            "Use cases": "When you need quick access to elements using an index.",
-            "Operations": "add, delete, update, traverse",
-            "Implementation": "",
-            "Problems": []
-          },
-          {
+            "content": "# hello world\n![h](https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg)"
+        },
+        {
             "id": 2,
             "name": "Linked List",
-            "description": "A collection of nodes where each node has a value and a reference to the next node in the sequence.",
-            "Image": "",
-            "Analogy": "A chain of boxes, where each box points to the next one.",
-            "Use cases": "When you need dynamic size and frequent insertions and deletions.",
-            "Operations": "add, delete, traverse, search",
-            "Implementation": "",
-            "Problems": []
-          },
-          {
+            "content": ""
+        },
+        {
             "id": 3,
             "name": "Stack",
-            "description": "A collection of items where the item added last is the first one to come out (LIFO).",
-            "Image": "",
-            "Analogy": "A stack of plates. You can only add or remove the top plate.",
-            "Use cases": "For backtracking, parsing expressions, and undo functionality.",
-            "Operations": "push, pop, peek",
-            "Implementation": "",
-            "Problems": []
-          },
-          {
+            "content": ""
+        },
+        {
             "id": 4,
             "name": "Queue",
-            "description": "A collection where the item added first is the first one to come out (FIFO).",
-            "Image": "",
-            "Analogy": "A line of people waiting for a bus. The person who arrives first, boards first.",
-            "Use cases": "For tasks scheduling and order processing.",
-            "Operations": "enqueue, dequeue, peek",
-            "Implementation": "",
-            "Problems": []
-          },
-          {
+            "content": ""
+        },
+        {
             "id": 5,
             "name": "Binary Tree",
-            "description": "A tree data structure where each node has at most two children: left and right.",
-            "Image": "",
-            "Analogy": "A family tree split into two families at each generation.",
-            "Use cases": "For hierarchical data representation and binary search operations.",
-            "Operations": "insert, delete, traverse",
-            "Implementation": "",
-            "Problems": []
-          },
-          {
+            "content": ""
+        },
+        {
             "id": 6,
             "name": "Hash Table",
-            "description": "A data structure that stores key-value pairs and uses a hash function to compute an index.",
-            "Image": "",
-            "Analogy": "A library catalog where books are stored based on a calculated address.",
-            "Use cases": "For quick data retrieval based on keys.",
-            "Operations": "insert, delete, retrieve",
-            "Implementation": "",
-            "Problems": []
-          },
-          {
+            "content": ""
+        },
+        {
             "id": 7,
             "name": "Graph",
-            "description": "A set of nodes connected by edges. Can be directed or undirected.",
-            "Image": "",
-            "Analogy": "A road map with cities as nodes and roads as edges.",
-            "Use cases": "To represent network structures and relations.",
-            "Operations": "add vertex, add edge, remove vertex, remove edge, traverse",
-            "Implementation": "",
-            "Problems": []
-          },
-          {
+            "content": ""
+        },
+        {
             "id": 8,
             "name": "Heap",
-            "description": "A special tree-based data structure that satisfies the heap property.",
-            "Image": "",
-            "Analogy": "A prioritized queue where the most important element is always at the front.",
-            "Use cases": "For priority queue implementations and heap sort.",
-            "Operations": "insert, delete, peek",
-            "Implementation": "",
-            "Problems": []
-          }
+            "content": ""
+        }
     ]
 }
