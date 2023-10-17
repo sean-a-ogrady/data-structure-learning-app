@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { useLoaderData, Link } from "react-router-dom";
-import DataStructure from "../dataStructure";
+import { useLoaderData, Link, Outlet } from "react-router-dom";
 
 export default function StructuresList(){
     const [structures, setStructures] = useState(useLoaderData());
@@ -13,6 +12,7 @@ export default function StructuresList(){
                     </li>
                 ))}
             </ul>
+            <Outlet />
         </div>
     );
 };
