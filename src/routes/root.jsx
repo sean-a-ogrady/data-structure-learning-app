@@ -10,7 +10,10 @@ export default function Root(){
             Footer
             */}
             <Nav/>
-            <Outlet />
+            <div className="mx-auto w-fit mt-10" >
+                <Outlet />
+            </div>
+            
         </div>
     );
 };
