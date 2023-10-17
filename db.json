@@ -1,6 +1,7 @@
 {
     "structures": [
         {
+            "id": 1,
             "name": "Array",
             "description": "A collection of items stored at contiguous memory locations. Items can be accessed randomly using indexes.",
             "Image": "",
@@ -11,6 +12,7 @@
             "Problems": []
           },
           {
+            "id": 2,
             "name": "Linked List",
             "description": "A collection of nodes where each node has a value and a reference to the next node in the sequence.",
             "Image": "",
@@ -21,6 +23,7 @@
             "Problems": []
           },
           {
+            "id": 3,
             "name": "Stack",
             "description": "A collection of items where the item added last is the first one to come out (LIFO).",
             "Image": "",
@@ -31,6 +34,7 @@
             "Problems": []
           },
           {
+            "id": 4,
             "name": "Queue",
             "description": "A collection where the item added first is the first one to come out (FIFO).",
             "Image": "",
@@ -41,6 +45,7 @@
             "Problems": []
           },
           {
+            "id": 5,
             "name": "Binary Tree",
             "description": "A tree data structure where each node has at most two children: left and right.",
             "Image": "",
@@ -51,6 +56,7 @@
             "Problems": []
           },
           {
+            "id": 6,
             "name": "Hash Table",
             "description": "A data structure that stores key-value pairs and uses a hash function to compute an index.",
             "Image": "",
@@ -61,6 +67,7 @@
             "Problems": []
           },
           {
+            "id": 7,
             "name": "Graph",
             "description": "A set of nodes connected by edges. Can be directed or undirected.",
             "Image": "",
@@ -71,6 +78,7 @@
             "Problems": []
           },
           {
+            "id": 8,
             "name": "Heap",
             "description": "A special tree-based data structure that satisfies the heap property.",
             "Image": "",
