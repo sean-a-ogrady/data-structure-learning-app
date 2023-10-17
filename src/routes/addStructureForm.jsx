@@ -1,6 +1,6 @@
 export default function AddStructureForm(){
     return(
-        <form className="text-4xl">
+        <form className="w-min">
             <input type="text" placeholder="title" name="title"/>
             <input type="text" placeholder="description" name="description"/>
             <input type="text" placeholder="image" name="image"/>

@@ -6,7 +6,7 @@ export default function StructuresList(){
     const [structures, setStructures] = useState(useLoaderData());
     return(
         <div>
-            <ul>
+            <ul className="list-disc" >
                 <li><DataStructure /></li>
                 <li><DataStructure /></li>
                 <li>3</li>
