@@ -10,7 +10,7 @@ export default function Nav() {
     document.documentElement.classList.toggle("dark", newDarkMode);
   }
   return (
-    <nav className="flex justify-around pb-3 pt-3 bg-slate-300">
+    <nav className="flex justify-around pb-3 pt-3 bg-slate-300 dark:bg-black">
       {/* <h1 className="p-3 text-lg font-semibold">
         <div className="flex">
         <svg
@@ -86,7 +86,7 @@ export default function Nav() {
           value=""
           className="sr-only peer"
         />
-        <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[18px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[18px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-green-dark"></div>
         <span className="ml-3 text-sm font-medium text-gray-900">
           {darkMode ? (
             <svg
@@ -94,7 +94,7 @@ export default function Nav() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke="currentColor"
+              stroke="#03C988"
               className="w-6 h-6"
             >
               <path
@@ -106,7 +106,7 @@ export default function Nav() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
+              fill=""
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"

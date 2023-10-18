@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function Homepage( { darkMode, setDarkMode}) {
   console.log(darkMode)
   return (
-    <div className="flex items-center justify-center flex-col">
+    <div className="flex items-center justify-center flex-col dark:bg-gray-950">
       <h1>Welcome to Structify!</h1>
       <p className="text-left">
         Discover the magic of data structures right here. Mastering them is your
