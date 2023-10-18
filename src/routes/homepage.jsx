@@ -37,7 +37,6 @@ export default function Homepage() {
         </div>
         {/* Add more images as needed */}
       </Carousel>
-      <p>Developed By Sean O'Grady, Dennis Shin, and Tymur Bondar</p>
     </div>
   );
 }
