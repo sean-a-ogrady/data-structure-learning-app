@@ -34,7 +34,7 @@ export default function AddStructureForm({ url }) {
   }
 
   return (
-    <form className="w-full h-screen max-w-4x1 mx-auto p-4" onSubmit={handleSubmit}>
+    <form className="w-full max-w-4x1 mx-auto p-4" style={{height: "90vh"}} onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Name"

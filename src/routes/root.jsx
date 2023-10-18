@@ -3,17 +3,17 @@ import Nav from "../nav";
 
 export default function Root() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       {/*
             Nav component 
             Outlet - main content
             Footer
             */}
       <Nav />
-      <div className="mx-auto w-fit mt-10">
+      <div className="w-fit mt-10">
         <Outlet />
       </div>
-      <footer className="absolute left-5 bottom-5 w-full">
+      <footer className="mt-auto ml-5 mr-5 mb-3">
         <p>
           © 2023 Structify. All Rights Reserved.
           <br />
