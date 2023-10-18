@@ -1,8 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink, useSearchParams } from "react-router-dom";
 
 export default function Nav() {
-  const [darkMode, setDarkMode] = useState(false);
+  // window.matchMedia("(prefers-color-scheme: dark)"
+  const [darkMode, setDarkMode] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  // console.log(window.matchMedia("(prefers-color-scheme: dark)").matches)
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (e) => {
+    // console.log('hello')
+    document.documentElement.classList.toggle("dark", window.matchMedia("(prefers-color-scheme: dark)").matches);
+    setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+  })
+
+  useEffect(() => {
+    if (darkMode){
+      document.documentElement.classList.toggle("dark", true);
+    }
+  }, [
+
+  ])
+
 
   function toggleDarkMode() {
     const newDarkMode = !darkMode;
@@ -31,7 +48,7 @@ export default function Nav() {
         </div>
       </h1> */}
 
-      <NavLink className="text-xl p-3 hover:bg-slate-400" to="/">
+      <NavLink className="text-xl p-3 hover:bg-slate-400 dark:hover:bg-green-dark rounded-md"  to="/">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +62,7 @@ export default function Nav() {
           Structify {/* Image */}
         </div>
       </NavLink>
-      <NavLink className="text-xl p-3 hover:bg-slate-400" to="data-structures">
+      <NavLink className="text-xl p-3 hover:bg-slate-400 dark:hover:bg-green-dark rounded-md" to="data-structures">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +79,7 @@ export default function Nav() {
           Data Structures
         </div>
       </NavLink>
-      <NavLink className="text-xl p-3 hover:bg-slate-400" to="add">
+      <NavLink className="text-xl p-3 hover:bg-slate-400 dark:hover:bg-green-dark rounded-md" to="add">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +99,9 @@ export default function Nav() {
       <label className="relative inline-flex items-center cursor-pointer">
         <input
           type="checkbox"
+          checked={darkMode}
           onChange={toggleDarkMode}
-          value=""
+          value=''
           className="sr-only peer"
         />
         <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[18px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-green-dark"></div>

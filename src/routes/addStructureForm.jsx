@@ -34,14 +34,14 @@ export default function AddStructureForm({ url }) {
   }
 
   return (
-    <form className="w-full max-w-4x1 mx-auto p-4" style={{height: "90vh"}} onSubmit={handleSubmit}>
+    <form className="w-full max-w-4x1 mx-auto p-4 " style={{height: "90vh"}} onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Name"
         name="name"
         value={formData.name}
         onChange={handleInputChange}
-        className="w-full p-2 mb-2 border rounded"
+        className="w-full p-2 mb-2 border border-black dark:border-white rounded bg-transparent"
       />
       <textarea
         type="text"
@@ -49,7 +49,7 @@ export default function AddStructureForm({ url }) {
         name="content"
         value={formData.content}
         onChange={handleInputChange}
-        className="w-full h-4/5 p-2 mb-2 border rounded resize-y"
+        className="w-full h-4/5 p-2 mb-2 border border-black dark:border-white rounded resize-y bg-transparent"
       />
       <div className="flex justify-end">
         <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-700">Submit</button>

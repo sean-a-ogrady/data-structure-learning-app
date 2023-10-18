@@ -15,8 +15,8 @@ export default function Root() {
       <div className="w-fit mt-10">
         <Outlet darkMode='fuck you'/>
       </div>
-      <footer className="mt-auto ml-5 mr-5 mb-3">
-        <p>
+      <footer className="w-full bg-slate-300 dark:bg-black">
+        <p className="mt-7 ml-5 mr-5 mb-3">
           © 2023 Structify. All Rights Reserved.
           <br />
           Developed By Sean O'Grady, Dennis Shin, and Tymur Bondar
