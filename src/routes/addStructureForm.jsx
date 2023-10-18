@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 export default function AddStructureForm({ url }) {
   const [formData, setFormData] = useState({ name: "", content: "" });
@@ -21,7 +22,7 @@ export default function AddStructureForm({ url }) {
       // let originalContent = retrievedContent.replace(/\\n/g, "\n");
       body: JSON.stringify({
         name: formData.name,
-        content: formData.content.replace(/\n/g, "\\n"),
+        content: formData.content.split("\n").join("  \n\u200B"),
       }),
     })
       .then((response) => {
@@ -34,26 +35,42 @@ export default function AddStructureForm({ url }) {
   }
 
   return (
-    <form className="w-full max-w-4x1 mx-auto p-4" style={{height: "90vh"}} onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Name"
-        name="name"
-        value={formData.name}
-        onChange={handleInputChange}
-        className="w-full p-2 mb-2 border rounded"
-      />
-      <textarea
-        type="text"
-        placeholder="Content"
-        name="content"
-        value={formData.content}
-        onChange={handleInputChange}
-        className="w-full h-4/5 p-2 mb-2 border rounded resize-y"
-      />
-      <div className="flex justify-end">
-        <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-700">Submit</button>
+    <div
+      className="flex mx-auto p-4"
+      style={{ height: "90vh", width: "100vw" }}
+    >
+      <form className="w-1/2" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Name"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
+          className="w-full p-2 mb-2 border rounded"
+        />
+        <textarea
+          type="text"
+          placeholder="Content"
+          name="content"
+          value={formData.content}
+          onChange={handleInputChange}
+          className="w-full h-4/5 p-2 mb-2 border rounded resize-y"
+        />
+        <div className="flex justify-start">
+          <button
+            type="submit"
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-700"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+      <div className="w-1/2 p-4 overflow-y-auto mr-4 ml-4" style={{height: "75vh"}} >
+        <h1>{formData.name}</h1>
+        <ReactMarkdown>
+          {formData.content.split("\n").join("  \n\u200B")}
+        </ReactMarkdown>
       </div>
-    </form>
+    </div>
   );
 }

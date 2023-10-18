@@ -13,7 +13,7 @@ export default function DataStructure({}) {
   };
 
   return (
-    <div className="w-fit flex-auto ml-10">
+    <div className="w-fit ml-10">
       <h1 className="text-5xl font-extrabold text-slate-600">{structure.name}</h1>
       <ReactMarkdown
         components={

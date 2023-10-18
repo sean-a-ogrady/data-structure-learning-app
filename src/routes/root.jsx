@@ -10,7 +10,7 @@ export default function Root() {
             Footer
             */}
       <Nav />
-      <div className="w-fit mt-10">
+      <div className="flex-grow">
         <Outlet />
       </div>
       <footer className="mt-auto ml-5 mr-5 mb-3">
