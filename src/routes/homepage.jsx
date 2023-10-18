@@ -1,6 +1,4 @@
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import Carousel from "../carousel";
 export default function Homepage( { darkMode, setDarkMode}) {
 
   return (
@@ -14,30 +12,7 @@ export default function Homepage( { darkMode, setDarkMode}) {
         that's hard to contain!
       </p>
       {/* I want to have carousel here */}
-      <Carousel className="w-1/2 h-1/2">
-        <div>
-          <img
-            src="https://miro.medium.com/v2/resize:fit:1400/1*X0Dg7QfSYtWhSAu-afi8-g.png"
-            alt="Array"
-          />
-          <p className="mt-7">Array</p>
-        </div>
-        <div>
-          <img
-            src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230726162542/Linked-List-Data-Structure.png"
-            alt="Linked List"
-          />
-          <p className="mt-7">Linked List</p>
-        </div>
-        <div>
-          <img
-            src="https://miro.medium.com/v2/resize:fit:677/1*Z89j_NoDx9HkFcPHy3rPZg.png"
-            alt="Tree"
-          />
-          <p className="mt-7">Tree</p>
-        </div>
-        {/* Add more images as needed */}
-      </Carousel>
+      <Carousel/>
     </div>
   );
 }
