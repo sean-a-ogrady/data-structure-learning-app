@@ -1,7 +1,9 @@
 import { Outlet } from "react-router-dom";
 import Nav from "../nav";
+import { useState } from "react";
 
 export default function Root() {
+    const [darkMode, setDarkMode] = useState(false);
   return (
     <div className="flex flex-col min-h-screen">
       {/*
@@ -11,7 +13,7 @@ export default function Root() {
             */}
       <Nav />
       <div className="w-fit mt-10">
-        <Outlet />
+        <Outlet darkMode='fuck you'/>
       </div>
       <footer className="mt-auto ml-5 mr-5 mb-3">
         <p>
