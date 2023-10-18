@@ -19,7 +19,9 @@ export default function Root() {
         <p className="mt-7 ml-5 mr-5 mb-3">
           © 2023 Structify. All Rights Reserved.
           <br />
-          Developed By Sean O'Grady, Dennis Shin, and Tymur Bondar
+          Developed By <a href="https://sean-ogrady.com/" target="_blank" className="dark:text-blue-400">Sean O'Grady</a>,
+          <a href="https://www.linkedin.com/in/dennis-shin-dev/" target="_blank" className="dark:text-blue-400"> Dennis Shin</a>, and
+          <a href="https://www.linkedin.com/in/tymurbondar/" target="_blank" className="dark:text-blue-400"> Tymur Bondar</a>
         </p>
       </footer>
     </div>
