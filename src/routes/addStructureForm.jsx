@@ -46,7 +46,7 @@ export default function AddStructureForm({ url }) {
           name="name"
           value={formData.name}
           onChange={handleInputChange}
-          className="w-full p-2 mb-2 border rounded"
+          className="w-full p-2 mb-2 border rounded bg-transparent dark:border-white"
         />
         <textarea
           type="text"
@@ -54,7 +54,7 @@ export default function AddStructureForm({ url }) {
           name="content"
           value={formData.content}
           onChange={handleInputChange}
-          className="w-full h-4/5 p-2 mb-2 border rounded resize-y"
+          className="w-full h-4/5 p-2 mb-2 border rounded resize-y bg-transparent dark:border-white"
         />
         <div className="flex justify-start">
           <button
