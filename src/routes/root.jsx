@@ -12,8 +12,8 @@ export default function Root() {
             Footer
             */}
       <Nav />
-      <div className="w-fit mt-10">
-        <Outlet darkMode='fuck you'/>
+      <div className="flex-grow">
+        <Outlet />
       </div>
       <footer className="w-full bg-slate-300 dark:bg-black">
         <p className="mt-7 ml-5 mr-5 mb-3">
