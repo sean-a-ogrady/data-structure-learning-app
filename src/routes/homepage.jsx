@@ -1,7 +1,8 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-export default function Homepage() {
+export default function Homepage( { darkMode, setDarkMode}) {
+  console.log(darkMode)
   return (
     <div className="flex items-center justify-center flex-col">
       <h1>Welcome to Structify!</h1>
