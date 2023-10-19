@@ -6,7 +6,7 @@ export default function DataStructure() {
   const components = useOutletContext();
 
   return (
-    <div className="w-fit flex-auto ml-10">
+    <div className="w-full overflow-hidden flex-auto ml-10 mr-10">
       <ReactMarkdown components={components}>
         {structure.content}
       </ReactMarkdown>
