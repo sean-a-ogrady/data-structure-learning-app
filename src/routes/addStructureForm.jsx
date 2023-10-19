@@ -1,8 +1,10 @@
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
+import { useOutletContext } from "react-router-dom";
 
 export default function AddStructureForm({ url }) {
   const [formData, setFormData] = useState({ name: "", content: "" });
+  const components = useOutletContext();
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -72,8 +74,7 @@ export default function AddStructureForm({ url }) {
         className="w-1/2 p-4 overflow-y-auto mr-4 ml-4"
         style={{ height: "75vh" }}
       >
-        <h1>{formData.name}</h1>
-        <ReactMarkdown>
+        <ReactMarkdown components={components}>
           {formData.content
             .split("\n")
             .map((line) => (line.startsWith("#") ? line : line + "  \n\u200B"))
