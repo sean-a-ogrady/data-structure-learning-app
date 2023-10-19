@@ -22,7 +22,10 @@ export default function AddStructureForm({ url }) {
       // let originalContent = retrievedContent.replace(/\\n/g, "\n");
       body: JSON.stringify({
         name: formData.name,
-        content: formData.content.split("\n").join("  \n\u200B"),
+        content: formData.content
+          .split("\n")
+          .map((line) => (line.startsWith("#") ? line : line + "  \n\u200B"))
+          .join("\n"),
       }),
     })
       .then((response) => {
@@ -65,10 +68,16 @@ export default function AddStructureForm({ url }) {
           </button>
         </div>
       </form>
-      <div className="w-1/2 p-4 overflow-y-auto mr-4 ml-4" style={{height: "75vh"}} >
+      <div
+        className="w-1/2 p-4 overflow-y-auto mr-4 ml-4"
+        style={{ height: "75vh" }}
+      >
         <h1>{formData.name}</h1>
         <ReactMarkdown>
-          {formData.content.split("\n").join("  \n\u200B")}
+          {formData.content
+            .split("\n")
+            .map((line) => (line.startsWith("#") ? line : line + "  \n\u200B"))
+            .join("\n")}
         </ReactMarkdown>
       </div>
     </div>
