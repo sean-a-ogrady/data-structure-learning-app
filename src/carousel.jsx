@@ -5,19 +5,19 @@ import { RxDotFilled } from "react-icons/rx";
 export default function Carousel() {
   const slides = [
     {
-      url: "../../images/array.png",
+      url: "https://i.ibb.co/ZzQjZNH/array.png",
     },
     {
-      url: "../../images/Singlelinkedlist.png",
+      url: "https://i.ibb.co/K02t8Q9/Singlelinkedlist.png",
     },
     {
-      url: "../../images/binaryTree.png",
+      url: "https://i.ibb.co/8dJb2WB/binary-Tree.png",
     },
     {
-      url: "../../images/hash-table.png",
+      url: "https://i.ibb.co/cFsp3Ft/hash-table.png",
     },
     {
-      url: "../../images/graph.png",
+      url: "https://i.ibb.co/7nKvBMt/graph.png",
     }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
