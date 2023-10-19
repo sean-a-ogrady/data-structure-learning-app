@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useLoaderData, Link, Outlet } from "react-router-dom";
+import { useLoaderData, Link, Outlet, useOutletContext } from "react-router-dom";
 
 export default function StructuresList(){
     const [structures, setStructures] = useState(useLoaderData());
+    const components = useOutletContext();
     return(
         <div className="flex" >
 
@@ -14,7 +15,7 @@ export default function StructuresList(){
                     </li>
                 ))}
             </ul>
-            <Outlet />
+            <Outlet context={components} />
         </div>
     );
 };
