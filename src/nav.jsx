@@ -27,7 +27,7 @@ export default function Nav() {
     document.documentElement.classList.toggle("dark", newDarkMode);
   }
   return (
-    <nav className="flex justify-around pb-3 pt-3 bg-slate-300 dark:bg-black">
+    <nav className="flex justify-around pb-3 pt-3 bg-green-dark dark:bg-black">
       {/* <h1 className="p-3 text-lg font-semibold">
         <div className="flex">
         <svg
@@ -48,7 +48,7 @@ export default function Nav() {
         </div>
       </h1> */}
 
-      <NavLink className="text-xl p-3 hover:bg-slate-400 dark:hover:bg-green-dark rounded-md"  to="/">
+      <NavLink className="text-xl p-3 hover:bg-gray-100 dark:hover:bg-green-dark rounded-md"  to="/">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Nav() {
           Structify {/* Image */}
         </div>
       </NavLink>
-      <NavLink className="text-xl p-3 hover:bg-slate-400 dark:hover:bg-green-dark rounded-md" to="data-structures">
+      <NavLink className="text-xl p-3 hover:bg-gray-100 dark:hover:bg-green-dark rounded-md" to="data-structures">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export default function Nav() {
           Data Structures
         </div>
       </NavLink>
-      <NavLink className="text-xl p-3 hover:bg-slate-400 dark:hover:bg-green-dark rounded-md" to="add">
+      <NavLink className="text-xl p-3 hover:bg-gray-100 dark:hover:bg-green-dark rounded-md" to="add">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"

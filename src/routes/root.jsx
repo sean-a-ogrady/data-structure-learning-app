@@ -17,7 +17,7 @@ export default function Root() {
       p: "my-2 text-xl dark:text-gray-300",
   
       // Links
-      a: "text-blue-500 hover:underline dark:text-blue-400 hover:bg-gray-700",
+      a: "text-blue-500 hover:underline dark:text-complimentary-dark dark:hover:bg-gray-700",
   
       // Lists
       ul: "text-xl list-disc pl-5 my-2 dark:text-gray-300",
@@ -86,13 +86,13 @@ export default function Root() {
       <div className="flex-grow">
         <Outlet context={components} />
       </div>
-      <footer className="w-full bg-slate-300 dark:bg-black">
+      <footer className="w-full bg-green-dark dark:bg-black">
         <p className="mt-7 ml-5 mr-5 mb-3">
           © 2023 Structify. All Rights Reserved.
           <br />
-          Developed By <a href="https://sean-ogrady.com/" target="_blank" className="dark:text-blue-400">Sean O'Grady</a>,
-          <a href="https://www.linkedin.com/in/dennis-shin-dev/" target="_blank" className="dark:text-blue-400"> Dennis Shin</a>, and
-          <a href="https://www.linkedin.com/in/tymurbondar/" target="_blank" className="dark:text-blue-400"> Tymur Bondar</a>
+          Developed By <a href="https://sean-ogrady.com/" target="_blank" className="text-lighter-main-dark dark:text-blue-400">Sean O'Grady</a>,
+          <a href="https://www.linkedin.com/in/dennis-shin-dev/" target="_blank" className="text-lighter-main-dark dark:text-blue-400"> Dennis Shin</a>, and
+          <a href="https://www.linkedin.com/in/tymurbondar/" target="_blank" className="text-lighter-main-dark dark:text-blue-400"> Tymur Bondar</a>
         </p>
       </footer>
     </div>
