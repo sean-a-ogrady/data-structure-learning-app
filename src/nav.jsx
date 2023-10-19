@@ -48,7 +48,7 @@ export default function Nav() {
         </div>
       </h1> */}
 
-      <NavLink className="text-xl p-3 hover:bg-gray-100 dark:hover:bg-green-dark rounded-md"  to="/">
+      <NavLink className="text-xl p-3 hover:bg-gray-100 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200 dark:hover:bg-green-dark rounded-md"  to="/">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Nav() {
           Structify {/* Image */}
         </div>
       </NavLink>
-      <NavLink className="text-xl p-3 hover:bg-gray-100 dark:hover:bg-green-dark rounded-md" to="data-structures">
+      <NavLink className="text-xl p-3 hover:bg-gray-100 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200 dark:hover:bg-green-dark rounded-md" to="data-structures">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export default function Nav() {
           Data Structures
         </div>
       </NavLink>
-      <NavLink className="text-xl p-3 hover:bg-gray-100 dark:hover:bg-green-dark rounded-md" to="add">
+      <NavLink className="text-xl p-3 hover:bg-gray-100 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200 dark:hover:bg-green-dark rounded-md" to="add">
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
