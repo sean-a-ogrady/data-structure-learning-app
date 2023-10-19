@@ -64,7 +64,7 @@ export default function AddStructureForm({ url }) {
         <div className="flex justify-start">
           <button
             type="submit"
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-700"
+            className="px-4 py-2 bg-green-dark text-white rounded hover:bg-green-800 focus:outline-none"
           >
             Submit
           </button>
