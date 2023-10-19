@@ -16,6 +16,10 @@ export default function AddStructureForm({ url }) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    if (formData.name === "") {
+      alert("Please enter a name.");
+      return;
+    }
     fetch(url, {
       method: "POST",
       headers: {

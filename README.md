@@ -16,8 +16,7 @@ This was created as a project for the Flatiron School's software engineering boo
 1. Clone the repository: git clone git@github.com:sean-a-ogrady/data-structure-learning-app.git
 2. Navigate to the project directory `cd data-structure-learning-app`
 3. Install the dependencies: `npm install`
-4. Run the database server: `json-server --watch db.json`
-5. In a separate terminal, run the application: `npm run dev`
+4. In a separate terminal, run the application: `npm run dev`
 
 ## About
 
