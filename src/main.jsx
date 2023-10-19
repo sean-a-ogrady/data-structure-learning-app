@@ -7,7 +7,7 @@ import StructuresList from "./routes/structuresList";
 import DataStructure from "./dataStructure";
 import Homepage from "./routes/homepage";
 
-const url = "http://localhost:3000/structures";
+const url = "https://structify-server.onrender.com/structures";
 
 
 const router = createBrowserRouter([
